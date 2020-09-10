@@ -1,6 +1,5 @@
 import React from "react";
 import App from "./App";
-import SharedButton from "./components/button";
 import { shallow } from "enzyme";
 import { findByTestAtr, testStore } from "../utils";
 
