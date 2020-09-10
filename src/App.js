@@ -41,10 +41,10 @@ class App extends Component {
         <section className="main">
           <Headline
             header="Posts"
-            desc="Click the button to render posts!"
+            desc={posts.length === 0 ? "Click the button to render posts!" : ""}
             tempArr={tempArr}
           />
-          <SharedButton {...configButton} />
+          {posts.length === 0 && <SharedButton {...configButton} />}
           {posts.length > 0 && (
             <div>
               {posts.map((post, index) => {
